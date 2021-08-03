@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/**boot css**/
+
+.img{
+    width: 100%;
+}
+.center{
+    max-width: 1280px;
+    padding:0 2%;
+    margin:  0 auto;
+
+}
+.w33{
+    width: 33.3%;
+}
+.w50{
+    width: 50%;
+}
+
+.left{
+    float: left;
+}
+
+.rigth{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+/** estilizacao **/
+header{
+    padding: 20px 0;
+    background: black;
+    
+}
+.mobile{
+    display: none;
+}
+nav.desktop{
+    list-style-type:none;
+}
+nav.desktop li{
+    display: inline-block;
+
+}
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+nav.desktop ul li :hover{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #00c59e;
+    
+}
+nav.desktop ul li a:hover{
+    color: #00c59e;
+}
+.image{
+    width: 0 auto;
+    padding-left: 7%; 
+    padding-top: 20px; 
+    padding-bottom: 20px;
+
+}/**
+.image:hover{ 
+    margin-top: 10px !important;
+    position: relative;
+}**/
+header .logo{
+    font-size: 23px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.banner-principal{
+    width: 100%;
+    height: 510px;
+    background: url(../image/modelagem-3d.png) center center no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   
+}
+/*.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(51, 51, 51, 0.8);
+}*/
+
+section.banner-principal form{
+    position: absolute;
+    left:50% ;
+    z-index: 2;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+section.banner-principal form{
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+section.banner-principal form input[type=email]{
+    width: 100%;
+    height: 60px;
+    background: white;
+    color: #333;
+    font-size: 22px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+section.banner-principal form input[type=submit]{
+    width: 100%;
+    height: 60px;
+    background: #00c59e;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 0;
+}
+section.jobs{
+    background: white;
+    margin-top: 100px ;
+    margin-bottom: 100px ;
+}
+section.jobs image{
+    margin-right: 50px;
+}
+
+section.especialidades{
+    padding: 40px 0;
+    color: white;
+    background: black;
+}
+section.especialidades h2.title{
+    text-align: center;
+}
+.box-especialidades{
+    padding-top: 20px;
+
+    text-align: center;
+}
+
+section.extras{
+    text-align:justify;
+    color: black;
+    
+    padding: 30px 0;
+    
+    background: #e2e2e2  ;
+}
+
+.extra-depoimento, .extra-servico{
+    
+    padding: 0 15%;
+    
+}
+
+.depoimentos-single{
+    padding: 15px 0;
+    border-bottom: 1px solid black;
+}
+.nome-autor{
+    padding-top: 10px;
+}
+
+footer{
+    background: black;
+    padding: 20px 0 ;
+}
+footer p{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+@media screen and (max-width: 700px){
+    nav.desktop{
+        display: none;
+    }
+    nav.mobile{
+        display: block;
+    }
+    .menu-botao{
+        cursor: pointer;
+        color: white;
+    }
+    nav.mobile ul{
+        top: 55px;
+        z-index: 3;
+        position: absolute;
+        left: 0;
+        display: block;
+        text-align: center;
+    }
+    nav.mobile ul{
+        font-weight: 300;
+        width: 100%;
+        display: none;
+        background: black;
+        
+        font-size: 17px;
+        padding:8px 0;
+    }
+    nav.mobile li a{
+        display: block;
+        color: #ccc;
+        border-bottom: 1px solid#ccc;
+        text-decoration: none;
+    }
+} 
+
+@media screen and (max-width: 800px){
+    .image{
+        float: none !important;
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+        
+
+    }   
+    .w50{
+        padding-left: 20px;
+        width: 100%;
+    }
+    .w33{
+        width: 100%;
+        padding-left: 20px;
+        
+    }
+    
+}
